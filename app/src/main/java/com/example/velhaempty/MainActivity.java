@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean checkForWin() {
         Button[] winnerPlay = new Button[3];
 
-        // Verifica linhas
+
         for (int i = 0; i < 3; i++) {
             if (buttons[i][0].getText().toString().equals(buttons[i][1].getText().toString()) &&
                     buttons[i][0].getText().toString().equals(buttons[i][2].getText().toString()) &&
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Verifica colunas
+
         for (int j = 0; j < 3; j++) {
             if (buttons[0][j].getText().toString().equals(buttons[1][j].getText().toString()) &&
                     buttons[0][j].getText().toString().equals(buttons[2][j].getText().toString()) &&
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // Verifica diagonal principal
+
         if (buttons[0][0].getText().toString().equals(buttons[1][1].getText().toString()) &&
                 buttons[0][0].getText().toString().equals(buttons[2][2].getText().toString()) &&
                 !buttons[0][0].getText().toString().isEmpty()) {
